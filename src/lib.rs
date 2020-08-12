@@ -36,8 +36,8 @@ impl Error for InlineError {
 impl fmt::Display for InlineError {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
         match self {
-            InlineError::IO(error) => write!(f, "{}", error),
-            InlineError::ParseError(error) => write!(f, "{}", error),
+            InlineError::IO(error) => f.write_str(error.to_string().as_str()),
+            InlineError::ParseError(error) => f.write_str(error.as_str()),
         }
     }
 }
