@@ -108,7 +108,7 @@ impl CSSInliner {
     /// Get default `InlineOptions`, then change base url
     ///
     /// ```rust
-    /// use css_inline_example::CSSInliner;
+    /// use css_inline::CSSInliner;
     /// # fn run() {
     /// let inliner = CSSInliner::options()
     ///     .remove_style_tags(true)

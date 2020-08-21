@@ -1,0 +1,7 @@
+include Cargo.toml
+include pyproject.toml
+include rust-toolchain
+include build.rs
+recursive-include src *
+recursive-include css_inline *
+recursive-exclude css_inline/target *

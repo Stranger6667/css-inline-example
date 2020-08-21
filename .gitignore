@@ -1,4 +1,12 @@
 /target
 Cargo.lock
 
+bindings/python/dist
+bindings/python/target
+css_inline/target
 .idea
+*.egg-info
+*.so
+*.egg
+.hypothesis
+.tox
